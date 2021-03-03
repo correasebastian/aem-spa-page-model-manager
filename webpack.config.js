@@ -16,7 +16,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const mode = isProduction ? 'production' : 'development';
-const devtool = isProduction ? false : 'source-map';
+const devtool = /* isProduction ? false : */ 'source-map';
 
 console.log('Building for:', mode);
 

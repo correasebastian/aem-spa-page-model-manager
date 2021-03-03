@@ -40,7 +40,7 @@ export class PathUtils {
      * @returns The result of the check of the existance of the window object.
      */
     public static isBrowser(): boolean {
-        return typeof window !== 'undefined';
+        return typeof window !== 'undefined' && ("CSSMediaRule" in window);
     }
 
     /**
